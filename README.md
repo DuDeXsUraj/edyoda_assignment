@@ -1,6 +1,6 @@
 # Edyoda React Subscription Page with Discount Calculation
 
-![Project Screenshot](link-to-your-screenshot.png)
+
 
 ## Table of Contents
 - [Introduction](#introduction)
