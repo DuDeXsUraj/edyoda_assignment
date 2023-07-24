@@ -11,6 +11,7 @@ function Content() {
     <h1>Access curated course worth
     ₹3000 at just <span className='blue-text'>₹2700</span> per year!
         </h1>   
+        <div className='under'></div>
         <div className="text-container">
      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faBook}/></span><span className='blue-text'>100+</span> <span>job relevant courses</span><br/></div>
       <div className='justify'><span className='icon'><FontAwesomeIcon icon={faBook}/></span><span className='blue-text'>20,000+ </span> <span>Hours of content</span><br /></div>
@@ -46,6 +47,14 @@ h1{
 
 .icon{
   margin-right:40px;
+}
+
+.under{
+  background-color:red;
+  width:90px;
+  height:4px;
+  position:absolute;
+  top:105px;
 }
 
 `

@@ -12,7 +12,8 @@ const SubscriptionPlan = () => {
 
   const [checkedInput, setCheckedInput] = useState('');
   const [selectedPrice, setSelectedPrice] = useState(3000);
-  const[price,setPrice] = useState(300)
+  const[price,setPrice] = useState(2750)
+  
   //const[disCount,setDiscount] = useState('300')
 
   //its for down two 
@@ -39,7 +40,10 @@ const SubscriptionPlan = () => {
     const total = document.getElementById("gtotal");
     const ntotal = event.target.value - ndiscount;
     total.innerHTML = ntotal;
+    
+    
   };
+  
 
 const handleInputChange = (event) => {
   setSelectedPrice(event.target.value);
@@ -177,12 +181,12 @@ other();
       </div>
       
       <div className="label">
-    <div className="left-content">Limited Timer Offer</div>
-    <div className="right-content" id="discount">{other()}</div>
+    <div className="left-content">Limited Timer Offer<p>Offer valid till 25th July 2023</p></div>
+    <div className="right-content" id="discount">250</div>
   </div>
       
       <div id="selectedPriceDisplay">
-        <div>Total:</div><div id="gtotal"></div>
+        <div>Total:</div><div id="gtotal">2750</div>
       </div>
       <div className="btns">
       <button className="cancel-btn" onClick={handleCancel} style={{ marginRight: '10px' }}>
@@ -201,11 +205,11 @@ const Wrapper = styled.div`
   padding-left: 30px;
   padding-right: 30px;
   color: black;
-  height: 94vh;
+  height: 98vh;
   border-radius: 10px;
   width: 30vw;
   margin-right:80px;
-  margin-top:-40px;
+  margin-top:-60px;
 
   h2 {
     text-align: center;
@@ -288,7 +292,7 @@ const Wrapper = styled.div`
     height:40px;
     border-radius:4px;
     text-align:center;
-    margin-top:40px;
+    margin-top:30px;
   }
 
   .cancel-btn{
