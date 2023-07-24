@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { styled } from "styled-components";
 import logo from '../Assets/Images/Icon Container.png'
 
+
+const discountP = 12;
 const SubscriptionPlan = () => {
   // State to keep track of the selected plan
 
@@ -10,6 +12,7 @@ const SubscriptionPlan = () => {
 
   const [checkedInput, setCheckedInput] = useState('');
   const [selectedPrice, setSelectedPrice] = useState(3000);
+  const[price,setPrice] = useState(300)
   //const[disCount,setDiscount] = useState('300')
 
   //its for down two 
@@ -28,12 +31,14 @@ const SubscriptionPlan = () => {
 
   const handleChange = (event) => {
     setCheckedInput(event.target.value);
-
+    const discount = document.getElementById("discount");
+    const price = event.target.value;
+    const ndiscount = price / discountP;
+    discount.innerHTML = ndiscount;
   };
 
 const handleInputChange = (event) => {
   setSelectedPrice(event.target.value);
-  
 }
 
 // let getDiscount = ()=>{
@@ -169,7 +174,7 @@ other();
       
       <div className="label">
     <div className="left-content">Limited Timer Offer</div>
-    <div className="right-content">{other()}</div>
+    <div className="right-content" id="discount">{other()}</div>
   </div>
       
       <div id="selectedPriceDisplay">
