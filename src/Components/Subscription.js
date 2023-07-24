@@ -35,6 +35,10 @@ const SubscriptionPlan = () => {
     const price = event.target.value;
     const ndiscount = price / discountP;
     discount.innerHTML = ndiscount;
+
+    const total = document.getElementById("gtotal");
+    const ntotal = event.target.value - ndiscount;
+    total.innerHTML = ntotal;
   };
 
 const handleInputChange = (event) => {
@@ -178,7 +182,7 @@ other();
   </div>
       
       <div id="selectedPriceDisplay">
-        <div>Total:</div><div></div>
+        <div>Total:</div><div id="gtotal"></div>
       </div>
       <div className="btns">
       <button className="cancel-btn" onClick={handleCancel} style={{ marginRight: '10px' }}>
