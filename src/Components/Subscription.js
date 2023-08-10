@@ -35,11 +35,11 @@ const SubscriptionPlan = () => {
     const discount = document.getElementById("discount");
     const price = event.target.value;
     const ndiscount = price / discountP;
-    discount.innerHTML = ndiscount;
+    discount.innerHTML ='₹'+ ndiscount;
 
     const total = document.getElementById("gtotal");
     const ntotal = event.target.value - ndiscount;
-    total.innerHTML = ntotal;
+    total.innerHTML = '₹'+ ntotal;
     
     
   };
@@ -177,16 +177,16 @@ other();
       </div>
       <div className="underline"></div>
       <div className="subscription">
-        <span>Subscription fee</span><span>{selectedPrice}</span>
+        <span>Subscription fee</span><span>₹{selectedPrice}</span>
       </div>
       
       <div className="label">
     <div className="left-content">Limited Timer Offer<p>Offer valid till 25th July 2023</p></div>
-    <div className="right-content" id="discount">250</div>
+    <div className="right-content" id="discount">₹250</div>
   </div>
       
       <div id="selectedPriceDisplay">
-        <div>Total:</div><div id="gtotal">2750</div>
+        <div>Total:</div><div id="gtotal">₹2750</div>
       </div>
       <div className="btns">
       <button className="cancel-btn" onClick={handleCancel} style={{ marginRight: '10px' }}>
@@ -205,11 +205,11 @@ const Wrapper = styled.div`
   padding-left: 30px;
   padding-right: 30px;
   color: black;
-  height: 98vh;
+  height: 100vh;
   border-radius: 10px;
   width: 30vw;
   margin-right:80px;
-  margin-top:-60px;
+  margin-top:-40px;
 
   h2 {
     text-align: center;
@@ -307,7 +307,7 @@ const Wrapper = styled.div`
   }
   
   .logo{
-    margin-top:30px;
+    margin-top:5px;
   }
 
 
@@ -339,6 +339,7 @@ const Wrapper = styled.div`
   width:80%;
   margin:auto
 }
+
 `;
 
 export default SubscriptionPlan;

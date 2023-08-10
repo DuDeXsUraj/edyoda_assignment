@@ -1,5 +1,5 @@
 
-import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faClock, faDesktop, faGraduationCap, faPercent, faPercentage, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { styled } from 'styled-components';
@@ -14,10 +14,10 @@ function Content() {
         <div className='under'></div>
         <div className="text-container">
      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faBook}/></span><span className='blue-text'>100+</span> <span>job relevant courses</span><br/></div>
-      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faBook}/></span><span className='blue-text'>20,000+ </span> <span>Hours of content</span><br /></div>
-      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faBook}/></span><span className='blue-text'>Fourth Line</span> <span>webinar access</span><br /></div>
-      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faBook}/></span><span >Scholarship worth</span> <span className='blue-text'>94,500 </span><br /></div>
-      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faBook}/></span><span className='blue-text'>Add free</span> <span>learning experience</span><br /></div>
+      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faClock}/></span><span className='blue-text'>20,000+ </span> <span>Hours of content</span><br /></div>
+      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faDesktop}/></span><span className='blue-text'>Fourth Line</span> <span>webinar access</span><br /></div>
+      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faGraduationCap}/></span><span >Scholarship worth</span> <span className='blue-text'>94,500 </span><br /></div>
+      <div className='justify'><span className='icon'><FontAwesomeIcon icon={faPlus}/></span><span className='blue-text'>Add free</span> <span>learning experience</span><br /></div>
     </div>
         
     </div>

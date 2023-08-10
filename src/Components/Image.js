@@ -7,6 +7,7 @@ function Image() {
     <Wrapper>
     <div image-container>
         <img src={image}></img>
+        <img src={image} className='image2'></img>
     </div>
     </Wrapper>
   )
@@ -16,6 +17,9 @@ const Wrapper = styled.div`
 img{
     width:100%;
     height:100%;
+}
+.image2{
+  margin-top:-30px;
 }
 `
 
